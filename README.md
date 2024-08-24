@@ -15,3 +15,8 @@ Based on the ["Neovim for Newbs"](https://www.youtube.com/playlist?list=PLsz00TD
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [none-ls](https://github.com/nvimtools/none-ls.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [luasnip](https://github.com/L3MON4D3/LuaSnip)
+- [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
+- [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
+- [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
