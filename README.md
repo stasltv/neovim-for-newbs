@@ -4,7 +4,6 @@ Based on the ["Neovim for Newbs"](https://www.youtube.com/playlist?list=PLsz00TD
 
 ![screenshot@2x](https://github.com/user-attachments/assets/840404ae-fd6d-4ff9-9449-c24bc81fd76e)
 
-
 ## Things inside
 
 - [catppuccin](https://github.com/nxstynate/catppuccin.nvim)
@@ -15,3 +14,4 @@ Based on the ["Neovim for Newbs"](https://www.youtube.com/playlist?list=PLsz00TD
 - [mason](https://github.com/williamboman/mason.nvim)
 - [mason-lspconfig](https://github.com/williamboman/mason-lspconfig.nvim)
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [none-ls](https://github.com/nvimtools/none-ls.nvim)
