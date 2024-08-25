@@ -20,3 +20,4 @@ Based on the ["Neovim for Newbs"](https://www.youtube.com/playlist?list=PLsz00TD
 - [cmp_luasnip](https://github.com/saadparwaiz1/cmp_luasnip)
 - [friendly-snippets](https://github.com/rafamadriz/friendly-snippets)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
+- [nvim-highlight-colors](https://github.com/brenoprata10/nvim-highlight-colors)
