@@ -9,17 +9,19 @@ vim.g.maplocalleader = "\\"
 vim.opt.number = true -- Enable line numbers
 vim.opt.numberwidth = 6
 
--- Autosave
-vim.opt.updatetime = 5000
+-- Create a custom highlight group for muted lines
+vim.api.nvim_exec([[
+  augroup HighlightConsoleDebug
+    autocmd!
+    autocmd ColorScheme * highlight MutedConsoleDebug guifg=#808080
+    autocmd BufEnter,BufWinEnter,WinEnter * call v:lua.HighlightDebugLines()
+  augroup END
+]], false)
 
-local autosave = vim.api.nvim_create_augroup("autosave", { clear = true })
+-- Function to apply the highlight on lines containing 'console.debug'
+function HighlightDebugLines()
+    vim.fn.matchadd('MutedConsoleDebug', '.*console\\.debug.*')
+end
 
-vim.api.nvim_create_autocmd({ "CursorHoldI", "CursorHold" }, {
-    group = autosave,
-    callback = function()
-        if vim.bo.modified then
-            vim.lsp.buf.format()
-            vim.cmd("silent! write")
-        end
-    end,
-})
+-- Apply the highlight initially
+HighlightDebugLines()
