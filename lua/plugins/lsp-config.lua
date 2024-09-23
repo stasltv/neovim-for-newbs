@@ -14,7 +14,8 @@ return {
                     'tailwindcss',
                     'volar',
                     'eslint',
-                    'tsserver'
+                    'tsserver',
+                    'hls'
                 }
             })
         end
@@ -36,9 +37,13 @@ return {
             lspconfig.eslint.setup({
                 capabilities = capabilities
             })
+            lspconfig.hls.setup({
+                filetypes = { 'haskell', 'lhaskell', 'cabal' },
+                capabilities = capabilities
+            })
             local mason_registry = require('mason-registry')
             local vue_language_server_path = mason_registry.get_package('vue-language-server'):get_install_path() ..
-            '/node_modules/@vue/language-server'
+                '/node_modules/@vue/language-server'
             lspconfig.tsserver.setup({
                 init_options = {
                     plugins = {

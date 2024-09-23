@@ -14,6 +14,9 @@ return {
             },
         })
 
-        vim.keymap.set("n", "<leader>fm", function() vim.lsp.buf.format({ timeout = 5000 }) end, {})
+        vim.keymap.set("n", "<leader>fm", function()
+            vim.lsp.buf.format({ timeout = 5000 })
+            vim.cmd("write")
+        end, {})
     end,
 }

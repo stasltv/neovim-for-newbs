@@ -1,4 +1,4 @@
-return  {
+return {
     'nvim-neo-tree/neo-tree.nvim',
     branch = 'v3.x',
     dependencies = {
@@ -14,13 +14,14 @@ return  {
                     hide_dotfiles = false,
                     hide_gitignored = false
                 },
+                window = {
+                    mappings = {
+                        ["l"] = "open",
+                    }
+                }
             }
         })
 
         vim.keymap.set('n', '<leader>nt', ':Neotree toggle<CR>', {})
-        vim.api.nvim_create_autocmd('VimEnter', {
-            command = 'Neotree',
-        })
     end
 }
-
