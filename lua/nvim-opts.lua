@@ -23,3 +23,4 @@ vim.opt.foldtext = ""
 vim.opt.foldlevel = 9
 vim.opt.foldlevelstart = 2
 vim.opt.foldnestmax = 2
+
