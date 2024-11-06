@@ -13,7 +13,6 @@ return {
 					"lua_ls",
 					"tailwindcss",
 					"volar",
-					"eslint",
 					"ts_ls",
 				},
 			})
@@ -32,9 +31,6 @@ return {
 			})
 			lspconfig.volar.setup({
 				filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
-			})
-			lspconfig.eslint.setup({
-				capabilities = capabilities,
 			})
 			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			local mason_registry = require("mason-registry")
