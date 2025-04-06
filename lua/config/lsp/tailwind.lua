@@ -80,7 +80,7 @@ vim.lsp.config.tailwindcss = {
                 eelixir = "html-eex",
                 eruby = "erb",
                 templ = "html",
-                htmlangular = "html",
+                htmlangular = "html"
             },
         },
     },
@@ -93,6 +93,8 @@ vim.lsp.config.tailwindcss = {
         "postcss.config.cjs",
         "postcss.config.mjs",
         "postcss.config.ts",
+        "nuxt.config.js",
+        ".gitignore"
     },
 }
 
