@@ -12,7 +12,6 @@ vim.cmd("set lbr")
 vim.cmd("set colorcolumn=120")
 
 vim.o.winborder = "rounded"
-vim.diagnostic.config({ virtual_lines = true })
 
-vim.opt.number = true -- Enable line numbers
+vim.opt.number = true
 vim.opt.numberwidth = 6
