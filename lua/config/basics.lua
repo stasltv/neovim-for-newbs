@@ -15,3 +15,4 @@ vim.o.winborder = "rounded"
 
 vim.opt.number = true
 vim.opt.numberwidth = 6
+vim.opt.splitright = true
