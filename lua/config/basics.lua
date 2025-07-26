@@ -16,3 +16,9 @@ vim.o.winborder = "rounded"
 vim.opt.number = true
 vim.opt.numberwidth = 6
 vim.opt.splitright = true
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldnestmax = 5

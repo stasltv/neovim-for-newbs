@@ -76,6 +76,15 @@ vim.lsp.config.typescript = {
     cmd = { "typescript-language-server", "--stdio" },
     filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact", "vue" },
     root_markers = { 'tsconfig.json', 'package.json', 'jsconfig.json', '.git' },
+    init_options = {
+        plugins = {
+            {
+                name = "@vue/typescript-plugin",
+                location = "/Users/sltv/.nvm/versions/node/v20.19.3/lib/node_modules/@vue/typescript-plugin",
+                languages = { "javascript", "typescript", "vue" },
+            },
+        },
+    },
     settings = {
         typescript = {
             inlayHints = inlayHints,

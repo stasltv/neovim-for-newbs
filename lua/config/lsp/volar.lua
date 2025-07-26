@@ -4,7 +4,7 @@ vim.lsp.config.volar = {
     root_markers = { '.git', 'package.json', 'tsconfig.json' },
     init_options = {
         typescript = {
-            tsdk = "/Users/sltv/.nvm/versions/node/v20.17.0/lib/node_modules/typescript/lib"
+            tsdk = "/Users/sltv/.nvm/versions/node/v20.19.3/lib/node_modules/typescript/lib"
         }
     },
 }
